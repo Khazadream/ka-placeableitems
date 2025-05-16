@@ -2,14 +2,6 @@ local QBCore = exports["qb-core"]:GetCoreObject()
 
 local ConfigItemName = 'testplaceable'
 
-QBCore.Commands.Add('useItemObject', 'Makes you add objects', {}, true, function(source)
-    local source = source
-    local Player = QBCore.Functions.GetPlayer(source)
-
-    TriggerClientEvent('ka-placeableitems:client:useItemObject', source)
-
-end, 'god')
-
 RegisterNetEvent('ka-placeableitems:server:PlacePlaceItem', function(slot)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)

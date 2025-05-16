@@ -1,18 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-RegisterNetEvent('ka-placeableitems:client:useItemObject', function()
-    local src = source
-    local dataCreateSpawnObject = { 
-        distance = 100, -- distance to spawn object
-        type = 'none', -- object type (none or container)
-        name = 'ka001', -- object name
-        --object = 'apa_mp_h_din_table_06', -- object hash name
-        object = 'p_stinger_02'
-    }
-    exports['ps-objectspawner']:CreateSpawnedObject(dataCreateSpawnObject, true)
-
-end)
-
 function placeItemOnGround(dist, tpe, objectName, objectGameName, metadata)
         local dataCreateSpawnObject = { 
         distance = dist, -- distance to spawn object
